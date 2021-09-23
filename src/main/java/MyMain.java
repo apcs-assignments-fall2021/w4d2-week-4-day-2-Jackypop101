@@ -11,8 +11,13 @@ public class MyMain {
     //    int[] arr2 = {2, 4, 6};
     //    int[] arr3 = addArrays3(arr1, arr2); // arr3 = [3, 7, 11]
     public static int[] addArrays3(int[] arr1, int[] arr2) {
-        // REPLACE THIS WITH YOUR CODE
-        return null;
+        int [] arr = new int [3];
+        int i = 0;
+        while (i < arr1.length){
+            arr[i] += arr1[i] +arr2[i];
+            i += 1;
+        }
+        return arr;
     }
 
     // Arrays Basics Problem 2:
@@ -23,8 +28,13 @@ public class MyMain {
     // int[] arr1 = {1, 3, 5};
     // double[] arr2 = average3(arr1); // arr2 = [3.0, 3.0, 3.0]
     public static double[] average3(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
-        return null;
+        double y = 0;
+        for(int x: arr) {
+            y += x;
+        }
+        y /= 3;
+        double [] res = {y,y,y};
+        return res;
     }
 
     // Iteration Problem 1:
@@ -34,10 +44,12 @@ public class MyMain {
     // int[] nums = {1, 6, 2, 6, 8, 2, 3, 9, 3};
     // int x = sum(nums); // x = 40
     public static int sum(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
-        return -1;
+        double y = 0;
+        for (int x : arr) {
+            y += x;
+        }
+        return (int) y;
     }
-
     // Iteration Problem 2:
     // Next, write a method max() that takes an int array of any size as input,
     // and outputs the largest number in the array
@@ -45,8 +57,16 @@ public class MyMain {
     // int[] nums = {1, 6, 2, 6, 8, 2, 3, 9, 3};
     // int x = max(nums); // x = 9
     public static int max(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
-        return -1;
+        int y = Integer.MIN_VALUE;
+        for(int x: arr) {
+            if (y >= x){
+                y = y;
+            }
+            else {
+                y = x;
+            }
+        }
+        return y;
     }
 
     // Challenge Problem:
